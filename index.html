@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Levers Hollywood - a prediction model for box office revenue</title>
+
+		<!-- Meta Tags -->
+		<link rel="profile" href="http://gmpg.org/xfn/11"/>
+		<link rel="pingback" href="https://leve.rs/xmlrpc.php"/>
+		<meta name="robots" content="noodp,noydir"/>
+		<meta name="description" content="Levers Hollywood scores movies with a prediction model based on the data surrounding past opening weekend performances."/>
+		<link rel="canonical" href="https://leve.rs/hollywood/"/>
+		<link rel="publisher" href="https://plus.google.com/104314449598044861741"/>
+		<meta property="og:locale" content="en_US"/>
+		<meta property="og:type" content="article"/>
+		<meta property="og:title" content="Levers Hollywood - a prediction model for box office revenue"/>
+		<meta property="og:description" content="Levers Hollywood scores movies with a prediction model based on the data surrounding past opening weekend performances."/>
+		<meta property="og:url" content="https://leve.rs/hollywood/"/>
+		<meta property="og:site_name" content="Levers"/>
+		<meta property="article:publisher" content="https://www.facebook.com/Levers"/>
+		<meta property="article:author" content="https://www.facebook.com/levers"/>
+		<meta property="fb:admins" content="507282144"/>
+		<meta property="og:image" content="https://leve.rs/assets/levers-og-default-img-v5.png"/>
+		<meta name="twitter:card" content="summary_large_image"/>
+		<meta name="twitter:site" content="@levers"/>
+		<meta name="twitter:domain" content="Levers"/>
+		<meta name="twitter:creator" content="@levers"/>
+		<meta name="twitter:image:src" content="https://leve.rs/assets/levers-og-default-img-v5.png"/>
+
+		<!-- Style Sheets -->
+		<link rel='stylesheet' id='bootstrap-css' href='./css/bootstrap.min.css' type='text/css' media='all'/>
+		<link rel='stylesheet' id='site-css' href='./css/site.css' type='text/css' media='all'/>
+
+		<!-- Scripts -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div itemscope itemtype="http://schema.org/Organization">
+					<a class="brand" style="width:300px;" href="https://leve.rs">
+					<img itemprop="logo" src="img/levers-hollywood-logo.png" alt="Levers Hollywood Logo"/>
+					</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<br />
+				<br />
+				<br />
+				<p class="large">
+					Levers /Hollywood was an application conceptualized and built in 32 hours during Hollywood Hack Day 2013. Building on the Levers simulations modeling concept, Levers /Hollywood determined the influence of variables that contribute to a film's production and predicted opening weekend box office revenues. Levers /Hollywood ingested the individual components of a movie, their historical performance and allowed us to model and extrapolate their opening day revenues at the box office. There were 35 teams participating; we placed second. Below are some screenshots of was the working concept and some technical details, and we also wrote a <a href="http://leve.rs/blog/levers-hollywood-predicts-opening-weekend-box-office-revenues/">wrap up post with additional details</a> as well.
+				</p>
+				<br />
+				<br />
+
+				<!-- thumbnails -->
+				<div class="row">
+					<div class="col-md-4 text-center">
+						<img class="thumb" src="img/home-page-thumb.png" alt="Levers Hollywood beta homepage"/>
+					</div>
+					<div class="col-md-4 text-center">
+						<img class="thumb" src="img/movie-page-thumb.png" alt="Levers Hollywood beta movie landing page"/>
+					</div>
+					<div class="col-md-4 text-center">
+						<img class="thumb" src="img/star-page-thumb.png" alt="Levers Hollywood beta actor page"/>
+					</div>
+				</div>
+				<br />
+				<br />
+
+				<!-- Predictions -->
+				<h2 class="text-center">Predictions</h2>
+				<br />
+				<br />
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+						<div class="movie">
+							<img class="img-responsive" src="img/poster-life-of-pi.jpg"/>
+							<ul class="stats">
+								<li class="projection">Projection: $20,370,082</li>
+								<li class="actual">Actual: $22,451,514</li>
+								<li class="error">Difference: 9.27%</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+						<div class="movie">
+							<img class="img-responsive" src="img/poster-star-trek.jpg"/>
+							<ul class="stats">
+								<li class="projection">Projection: $72,584,365</li>
+								<li class="actual">Actual: $75,204,289</li>
+								<li class="error">Difference: 3.84%</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+						<div class="movie">
+							<img class="img-responsive" src="img/poster-hobbit.jpg"/>
+							<ul class="stats">
+								<li class="projection">Projection: $79,523,341</li>
+								<li class="actual">Actual: $84,617,303</li>
+								<li class="error">Difference: 6.02%</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+							<div class="movie">
+							<img class="img-responsive" src="img/poster-me.jpg"/>
+							<ul class="stats">
+								<li class="projection">Projection: $75,766,908</li>
+								<li class="actual">Actual: $83,517,315</li>
+								<li class="error">Difference: 9.28%</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<br />
+				<br />
+
+				<!-- Explanation -->
+				<h2 class="text-center">Explanation of Data</h2>
+				<br />
+				<br />
+				<div class="row">
+					<div class="col-md-12">
+						<h4>How does the Levers /Hollywood Engine work?</h4>
+						<p>
+							Levers /Hollywood uses a proprietary algorithm taking into consideration the most significant factors that contribute to a film's opening weekend success. We incorporate elements of graph theory, linear regression and advanced statistical forecasting to derive meaning from the meta data of 2.6 million films and 3.4 million cast and crew members. Levers /Hollywood calculates the contribution of multiple variables including cast, producer, director, writer, MPAA rating and social media buzz. Levers /Hollywood also applies seasonal trend analysis to film release dates to account for holidays and the summer blockbuster season. What happens after the movie opens?
+						</p>
+						<p>
+							Each Monday the opening weekend projections are replaced with the actual revenue numbers and the accuracy of our predictions so that we can continually adjust our algorithm for upcoming films. Predictions are continually updated until opening day, then they remain unchanged.
+						</p>
+					</div>
+				</div>
+				<br />
+				<br />
+			</div>
+		</main>
+		<main class="dark">
+			<div class="container">
+				<!-- Specs -->
+				<div class="row">
+					<div class="col-md-8">
+						<h4>So what is this L-Score?</h4>
+						<p>
+							L-Score is the quantified value of a cast or crew member's contribution to revenue for any film. L-Score is calculated via a combination of graph theory and Google's Page Rank algorithm. These scores are based on a weighted box office revenue, decaying over time to allow for most recent films to have the most impact. When all of the cast members' and director's L-Scores are taken in consideration, we are able to project opening weekend box office revenue for any combination of people.
+						</p>
+						<h4 class="bold" style="margin-top:60px;">What is the Topsy Score?</h4>
+						<p>
+							The Topsy Score is a factor used in our model to take into account the social media buzz surrounding the release of a movie.
+						</p>
+					</div>
+					<div class="col-md-4">
+						<h4>Technology Utilization</h4>
+						<ul>
+							<li><strong>IMDB</strong>: all the things data</li>
+							<li><strong>Rotten Tomatoes</strong>: movie data</li>
+							<li><strong>Rovi</strong>: people data</li>
+							<li><strong>Topsy</strong>: Twitter trending data</li>
+							<li><strong>Laravel</strong>: coding framework</li>
+							<li><strong>Twitter Bootstrap</strong>: presentation and layout</li>
+							<li><strong>SASS CSS</strong>: presentation and layout</li>
+							<li><strong>Redis</strong>: data storage</li>
+							<li><strong>Python</strong>: calculations processing</li>
+							<li><strong>Amazon Web Services</strong>: hosting</li>
+							<li><strong>Highcharts</strong>: Interactive data charting visualization</li>
+							<li><strong>Unveil</strong>: lazy load images for jQuery</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="row" itemscope itemtype="http://schema.org/PostalAddress">
+					<div class="col-sm-7">
+						<p>
+							&copy; 2014 <span itemprop="name">Levers</span> LLC.
+						</p>
+					</div>
+					<div class="col-md-5">
+						<p class="pull-right">
+							<span><a href="https://twitter.com/levers" rel="me">Twitter</a> | <a href="https://www.facebook.com/Levers" rel="me">Facebook</a> | <a href="https://plus.google.com/104314449598044861741" rel="publisher">Google+</a> | <span itemprop="addressLocality">San Francisco</span>, <span itemprop="addressRegion">CA</span> <span itemprop="postalCode">94103</span></span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
