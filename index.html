@@ -4,12 +4,7 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Levers Hollywood - a prediction model for box office revenue</title>
-
-		<!-- Meta Tags -->
-		<link rel="profile" href="http://gmpg.org/xfn/11"/>
-		<link rel="pingback" href="https://leve.rs/xmlrpc.php"/>
-		<meta name="robots" content="noodp,noydir"/>
-		<meta name="description" content="Levers Hollywood scores movies with a prediction model based on the data surrounding past opening weekend performances."/>
+		<meta name="description" content="Levers Hollywood scores movies with a prediction model based on the data surrounding past opening weekend performances. Conceptualized and built in 32 hours during Hollywood Hack Day 2013"/>
 		<link rel="canonical" href="http://hollywood.leve.rs/"/>
 		<link rel="publisher" href="https://plus.google.com/104314449598044861741"/>
 		<meta property="og:locale" content="en_US"/>
@@ -27,15 +22,10 @@
 		<meta name="twitter:domain" content="Levers"/>
 		<meta name="twitter:creator" content="@levers"/>
 		<meta name="twitter:image:src" content="http://hollywood.leve.rs/img/levers-og.png"/>
-
-		<!-- Style Sheets -->
 		<link rel='stylesheet' id='bootstrap-css' href='./css/bootstrap.min.css' type='text/css' media='all'/>
 		<link rel='stylesheet' id='site-css' href='./css/site.css' type='text/css' media='all'/>
-
-		<!-- Scripts -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="./js/bootstrap.min.js"></script>
-
 	</head>
 	<body>
 		<header>
@@ -53,7 +43,7 @@
 				<br />
 				<br />
 				<p class="large">
-					Levers /Hollywood was an application conceptualized and built in 32 hours during Hollywood Hack Day 2013. Building on the Levers simulations modeling concept, Levers /Hollywood determined the influence of variables that contribute to a film's production and predicted opening weekend box office revenues. Levers /Hollywood ingested the individual components of a movie, their historical performance and allowed us to model and extrapolate their opening day revenues at the box office. There were 35 teams participating; we placed second. Below are some screenshots of was the working concept and some technical details, and we also wrote a <a href="http://leve.rs/blog/levers-hollywood-predicts-opening-weekend-box-office-revenues/">wrap up post with additional details</a> as well.
+					Levers Hollywood was an application conceptualized and built in 32 hours during Hollywood Hack Day 2013. Building on the Levers simulations modeling concept, Levers Hollywood determined the influence of variables that contribute to a film's production and predicted opening weekend box office revenues. Levers Hollywood ingested the individual components of a movie, their historical performance and allowed us to model and extrapolate their opening day revenues at the box office. There were 35 teams participating; we placed second. Below are some screenshots of was the working concept and some technical details.
 				</p>
 				<br />
 				<br />
@@ -128,9 +118,9 @@
 				<br />
 				<div class="row">
 					<div class="col-md-12">
-						<h4>How does the Levers /Hollywood Engine work?</h4>
+						<h4>How does the Levers Hollywood Engine work?</h4>
 						<p>
-							Levers /Hollywood uses a proprietary algorithm taking into consideration the most significant factors that contribute to a film's opening weekend success. We incorporate elements of graph theory, linear regression and advanced statistical forecasting to derive meaning from the meta data of 2.6 million films and 3.4 million cast and crew members. Levers /Hollywood calculates the contribution of multiple variables including cast, producer, director, writer, MPAA rating and social media buzz. Levers /Hollywood also applies seasonal trend analysis to film release dates to account for holidays and the summer blockbuster season. What happens after the movie opens?
+							Levers Hollywood uses a proprietary algorithm taking into consideration the most significant factors that contribute to a film's opening weekend success. We incorporate elements of graph theory, linear regression and advanced statistical forecasting to derive meaning from the meta data of 2.6 million films and 3.4 million cast and crew members. Levers Hollywood calculates the contribution of multiple variables including cast, producer, director, writer, MPAA rating and social media buzz. Levers Hollywood also applies seasonal trend analysis to film release dates to account for holidays and the summer blockbuster season. What happens after the movie opens?
 						</p>
 						<p>
 							Each Monday the opening weekend projections are replaced with the actual revenue numbers and the accuracy of our predictions so that we can continually adjust our algorithm for upcoming films. Predictions are continually updated until opening day, then they remain unchanged.
@@ -150,10 +140,12 @@
 						<p>
 							L-Score is the quantified value of a cast or crew member's contribution to revenue for any film. L-Score is calculated via a combination of graph theory and Google's Page Rank algorithm. These scores are based on a weighted box office revenue, decaying over time to allow for most recent films to have the most impact. When all of the cast members' and director's L-Scores are taken in consideration, we are able to project opening weekend box office revenue for any combination of people.
 						</p>
-						<h4 class="bold" style="margin-top:60px;">What is the Topsy Score?</h4>
+						<h4 style="margin-top:30px;">What is the Topsy Score?</h4>
 						<p>
 							The Topsy Score is a factor used in our model to take into account the social media buzz surrounding the release of a movie.
 						</p>
+						<h4 style="margin-top:30px;">How to contact us:</h4>
+						<p>WHile Levers, the product, doesn't exist anymore the team is alive and well. <a href="http://vuurr.com/engage/">Contact us via our main company Vuurr</a></p>
 					</div>
 					<div class="col-md-4">
 						<h4>Technology Utilization</h4>
@@ -182,12 +174,12 @@
 				<div class="row" itemscope itemtype="http://schema.org/PostalAddress">
 					<div class="col-sm-7">
 						<p>
-							&copy; 2014 <span itemprop="name">Levers</span> LLC.
+							&copy; 2014 <span itemprop="name">Levers</span> LLC (<i>a <a href="http://vuurr.com">Vuurr</a> company</i>).
 						</p>
 					</div>
 					<div class="col-md-5">
 						<p class="pull-right">
-							<span itemprop="addressLocality">San Francisco</span>, <span itemprop="addressRegion">CA</span> <span itemprop="postalCode">94103</span> | <span itemprop="telephone">415-549-0220</span>
+							<span itemprop="addressLocality">San Francisco</span>, <span itemprop="addressRegion">CA</span> <span itemprop="postalCode">94103</span>
 						</p>
 					</div>
 				</div>
